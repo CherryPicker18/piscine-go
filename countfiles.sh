@@ -1,1 +1,1 @@
-find . \( -name '*.sh' \) -print | sed 's/\(.*\)\///g' | sed 's/\.sh//g'
+( find . -type d && find . -type f ) | wc -l | sed ':1d'
