@@ -1,1 +1,2 @@
-find . \( -name 'a*' -0 -name '*z' -0 -name 'z*' -name '*a'! \)
+find . \( -name 'a*' -name '*z' -0 -name 'z*' -name '*a'! \)
+
