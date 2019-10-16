@@ -1,16 +1,14 @@
-package main
+package main 
 
 import (
 	"github.com/01-edu/z01"
 )
 
-func IsNegative(nb int) {
+func IsNegative(nb int ) {
 	if nb < 0 {
 		z01.PrintRune('F')
-	}
-	if nb >= 0 {
+	} else {
 		z01.PrintRune('T')
 	}
 
-	z01.PrintRune('\n')
-}
+z01.PrintRune('\n')
