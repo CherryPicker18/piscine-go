@@ -8,10 +8,12 @@ func IterativeFactorial(nb int) int {
 
 		for i := 1; i <= nb; i++ {
 			Fact = Fact * i
-			return Fact
+			return (Fact)
 		}
 	} else {
 		return 0
 	}
 
 }
+
+
