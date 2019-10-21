@@ -6,7 +6,7 @@ func RecursiveFactorial(nb int) int {
 		return 1
 	} else {
 		if nb >= 0 && nb <= 20 {
-			return RecursiveFactorial(nb - 1)
+			return nb * RecursiveFactorial(nb-1)
 		} else {
 			return 0
 		}
