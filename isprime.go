@@ -9,19 +9,18 @@ func IsPrime(nb int) bool {
 	// нужен лог флажок ?
 	// isPrime := false
 
-	if (nb%1 == 0) && (nb%nb == 0) {
+	// if (nb%1 == 0) && (nb%nb == 0) {
+	// }
+	for i := 0; i < nb; i++ {
+		nb%i == 0
+		return true
+	}
 
-		for i := 0; i < nb; i++ {
-			nb%i == 0
-			return true
-		}
-
-		if nb == 1 {
-			return false
-		}
-		if nb <= 0 {
-			return false
-		}
+	if nb == 1 {
+		return false
+	}
+	if nb <= 0 {
+		return false
 	}
 
 }
