@@ -11,7 +11,7 @@ func IsPrime(nb int) bool {
 
 	if (nb%1 == 0) && (nb%nb == 0) {
 
-		for i = 0; i < nb; i++ {
+		for i := 0; i < nb; i++ {
 			nb%i == 0
 			return true
 		}
