@@ -24,8 +24,8 @@ func PrintNbrInOrder(n int) {
 	// BubbleSort
 	for i := 1; i < len; i++ {
 		for j := 1; j < len; j++ {
-			if array[i-1] > array[i] {
-				array[i-1], array[i] = array[i], array[i-1] // оказывается и так можно вместо func Swap()
+			if array[j-1] > array[j] {
+				array[j-1], array[j] = array[j], array[j-1] // оказывается и так можно вместо func Swap()
 			}
 		}
 	}
