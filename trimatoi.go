@@ -5,7 +5,7 @@ func TrimAtoi(s string) int{
 	runes := []rune(s) // Создан массив рун из строки
 	isFoundDigit := false // Создан логический флажок
 	result := 0 // иниц переменная для результата
-	sign := 0 // ициц переменная для символа
+	sign := 1 // ициц переменная для символа
 	
 	for _, r := range runes {
 		if isFoundDigit == false {
