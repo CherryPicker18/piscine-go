@@ -5,7 +5,7 @@ import "github.com/01-edy/z01"
 func PrintNbrInOrder(n int) {
 	if n == 0 {
 
-		z01.PrintNbrInOrder('0')
+		z01.PrintRune('0')
 	}
 	array := []int{}
 
