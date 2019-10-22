@@ -1,31 +1,23 @@
-package piscine 
+package piscine
 
-func TrimAtoi(s string) int{
-
-	runes := []rune(s) // Создан массив рун из строки
-	isFoundDigit := false // Создан логический флажок
-	result := 0 // иниц переменная для результата
-	sign := 1 // ициц переменная для символа
-	
+func TrimAtoi(s string) int {
+	runes := []rune(s)
+	sign := 1
+	result := 0
+	foundDigit := false
 	for _, r := range runes {
-		if isFoundDigit == false {
-			// switch r { // я кароче гавнокодер сорри)
-			// case '-' sign = -1  не знаю как тут использовать оператор свитч)
-			// case '+' sign = 1  походу когда будет много else if подрят)
-			// }
+		if !foundDigit {
 			if r == '-' {
 				sign = -1
 			} else if r == '+' {
-				sing = 1
+				sign = 1
 			}
 		}
-		
-		if r >= '0' && r <= '9'{
-			isFoundDigit = true 
-			result = 10 * result + int(r-'0')
+		if r >= '0' && r <= '9' {
+			foundDigit = true
+			result = 10*result + int(r-'0')
 		}
 	}
-
 	return sign * result
 }
 
