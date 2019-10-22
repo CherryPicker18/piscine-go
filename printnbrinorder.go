@@ -2,10 +2,10 @@ package piscine
 
 import "github.com/01-edy/z01"
 
-func PrintNbrOrder(n int) {
+func PrintNbrInOrder(n int) {
 	if n == 0 {
 
-		z01.PrintNbrOrder('0')
+		z01.PrintNbrInOrder('0')
 	}
 	array := []int{}
 
