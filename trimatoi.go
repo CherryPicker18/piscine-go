@@ -8,12 +8,12 @@ func TrimAtoi(s string) int {
 	sign := 1             // ициц переменная для символа
 
 	for _, r := range runes {
-		if isFoundDigit == false {
+		if !isFoundDigit {
 
 			if r == '-' {
 				sign = -1
 			} else if r == '+' {
-				sing = 1
+				sign = 1
 			}
 		}
 
