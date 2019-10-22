@@ -1,7 +1,5 @@
 package piscine 
 
-import "github.com/01-edu/z01"
-
 func TrimAtoi(s string) int{
 
 	runes := []rune(s) // Создан массив рун из строки
