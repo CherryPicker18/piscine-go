@@ -1,24 +1,27 @@
 package piscine
 
 func TrimAtoi(s string) int {
-	runes := []rune(s)
-	sign := 1
-	result := 0
-	foundDigit := false
+
+	runes := []rune(s)    // Создан массив рун из строки
+	isFoundDigit := false // Создан логический флажок
+	result := 0           // иниц переменная для результата
+	sign := 1             // ициц переменная для символа
+
 	for _, r := range runes {
-		if !foundDigit {
+		if isFoundDigit == false {
+
 			if r == '-' {
 				sign = -1
 			} else if r == '+' {
-				sign = 1
+				sing = 1
 			}
 		}
+
 		if r >= '0' && r <= '9' {
-			foundDigit = true
+			isFoundDigit = true
 			result = 10*result + int(r-'0')
 		}
 	}
+
 	return sign * result
 }
-
-
