@@ -17,5 +17,5 @@ func LastRune(s string) rune {
 		}
 	}
 
-	return 0 // суда нужна последняя руна
+	return 42 // исчерпывающий ответ
 }
