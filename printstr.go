@@ -1,17 +1,25 @@
 package piscine
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func PrintStr(str string) {
+	arrOfRunes := []rune(str)
 
-	r := []rune(str)
-	a := 0
-	for index := range str {
-		a = index
+	length := 0
+
+	for range str {
+		length++
 	}
-	for i := 0; i <= a; i++ {
-		z01.PrintRune(r[i])
+
+	for _, value := range arrOfRunes {
+		z01.PrintRune(value)
 	}
+
+	z01.PrintRune('\n')
+}
+
+func main() {
+
+	PrintStr("Hello")
+
 }
